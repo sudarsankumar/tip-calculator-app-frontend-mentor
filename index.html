@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="./script.js" defer></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="heading">
+			<div class="head">
+				Spli<br />tter
+			</div>
+		</h1>
+		<div class="splitter">
+			<div class="left">
+				<div class="top">
+					<div class="bill">Bill</div>
+					<div class="input-field">
+						<img src="./images/icon-dollar.svg" alt="">
+						<input type="text" id="amt" class="field" placeholder="0">
+					</div>
+				</div>
+				<div class="middle">
+					<div class="bill">Select Tip %</div>
+					<div class="btns">
+						<div class="btn">
+							<button id="5" onclick="checkTip(this.id)">5%</button>
+						</div>
+						<div class="btn">
+							<button id="10" onclick="checkTip(this.id)">10%</button>
+						</div>
+						<div class="btn">
+							<button id="15" onclick="checkTip(this.id)">15%</button>
+						</div>
+						<div class="btn">
+							<button id="25" onclick="checkTip(this.id)">25%</button>
+						</div>
+						<div class="btn">
+							<button id="50" onclick="checkTip(this.id)">50%</button>
+						</div>
+						<input type="text" class="field-tip" id="custom" placeholder="Custom" oninput="checkInpTip()">
+					</div>
+				</div>
+				<div class="end">
+					<div class="end-top">
+						<div class="bill">Number of People</div>
+						<div class="warning">Can't be zero</div>
+					</div>
+					<div class="input-field">
+						<img src="./images/icon-person.svg" alt="">
+						<input type="text" name="" id="people" class="field" placeholder="0">
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="tip-amt">
+					<div class="tips">
+						<div class="bold">Tip Amount</div>
+						<div class="light">/person</div>
+					</div>
+					<div class="amount">
+						<img src="./images/icon-dollar.svg" style="fill: hsl(172,67%,45%);" alt="">
+						<p id="amtPerPerson">0.00</p>
+					</div>
+				</div>
+				<div class="tot-amt">
+					<div class="tip-amt">
+						<div class="tips">
+							<div class="bold">Total Amount</div>
+							<div class="light">/person</div>
+						</div>
+						<div class="amount">
+							<img src="./images/icon-dollar.svg" style="fill: hsl(172,67%,45%);" alt="">
+							<p id="totPerPerson">0.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="reset-container">
+					<button class="reset" id="reset" disabled>RESET</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		created by <a href="">Sudarsan Kumar</a> - front end mentor.io
+	</footer>
+</body>
+</html>
